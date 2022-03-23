@@ -19,4 +19,19 @@ public abstract class Naves {
 
     public abstract void mensajeLlegada();
 
+    public void misionesLunares(){
+
+    }
+
+    public void experimentacion(){
+
+    }
+
+    public void mantenimiento(){
+
+    }
+
+    public void mostrar(){
+
+    }
 }
