@@ -28,7 +28,9 @@ public class Main {
                 break;
 
             case 4:
-                System.out.println("4. Nave no tripulada para estudiar.");
+                System.out.println("Ha seleccionado la nave no tripulada para estudiar. \n" +
+                        "¿Cuál será el destino de la nave no tripulada para estudiar?");
+                menu.opcionesNavesNoTripuladas();
                 break;
         }
     }

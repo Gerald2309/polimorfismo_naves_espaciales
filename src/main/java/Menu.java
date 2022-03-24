@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public Integer opcion1;
-    public Integer opcion2;
-    public Integer opcion3;
     public Integer numeroPrincipal;
 
     /*
@@ -104,6 +101,43 @@ public class Menu {
             Energia = new NavesLanzadera("111", 2400, 60, 0, "Energia", 3060, 100);
             Energia.mostrar();
         } else{System.out.println("La opción ingresada no es válida");}
+
+    }
+
+    public void opcionesNavesNoTripuladas() throws IOException {
+        Scanner option1 = new Scanner(System.in);
+        System.out.println(" ****** MENÚ ****** \n" +
+                "\n" +
+                "1. Urano y Neptuno \n" +
+                "2. Sol \n" +
+                "3. Venus \n" +
+                "\n " +
+                " ****** FIN MENÚ ****** \n"+
+                "Ingrese el número para indicar el tipo de misión/lugar de destino de la nave. \n"
+
+        );
+        Integer opcionPersona1 = option1.nextInt();
+        flujoNavesNoTripuladas(opcionPersona1);
+    }
+
+    public void flujoNavesNoTripuladas(Integer opcionPersona1){
+        NavesNoTripuladasParaEstudiar naveParaEstudiar = new NavesNoTripuladasParaEstudiar();
+
+        switch (opcionPersona1){
+            case 1:
+                //ESTO ES UN CAST
+                naveParaEstudiar.uranoYNeptuno();
+                break;
+
+            case 2:
+                naveParaEstudiar.sol();
+                break;
+
+            case 3:
+                naveParaEstudiar.venus();
+                break;
+
+        }
 
     }
 
