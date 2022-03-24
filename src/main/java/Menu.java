@@ -7,7 +7,7 @@ public class Menu {
 
     /*
     *
-    *MENÚ PRINCIPAL
+    * OPCIONES MENÚ PRINCIPAL
     *
     */
     public Integer opciones() throws IOException {
@@ -104,6 +104,12 @@ public class Menu {
 
     }
 
+
+    /*
+    *
+    * MENÚ NAVES NO TRIPULADAS
+    *
+    */
     public void opcionesNavesNoTripuladas() throws IOException {
         Scanner option1 = new Scanner(System.in);
         System.out.println(" ****** MENÚ ****** \n" +
@@ -125,7 +131,6 @@ public class Menu {
 
         switch (opcionPersona1){
             case 1:
-                //ESTO ES UN CAST
                 naveParaEstudiar.uranoYNeptuno();
                 break;
 
