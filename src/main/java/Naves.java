@@ -1,13 +1,13 @@
 public abstract class Naves {
 
-    public double potencia;
+    public String potencia;
     public double peso;
     public double altura;
     public double velocidad;
     public String nombre;
   //  public VehiculoLanzador propulsion;
 
-    public Naves(double potencia, double peso, double altura, double velocidad, String nombre){
+    public Naves(String potencia, double peso, double altura, double velocidad, String nombre){
 
         this.potencia = potencia;
         this.peso = peso;
@@ -18,20 +18,7 @@ public abstract class Naves {
     }
 
     public abstract void mensajeLlegada();
+    public abstract void mostrar();
 
-    public void misionesLunares(){
 
-    }
-
-    public void experimentacion(){
-
-    }
-
-    public void mantenimiento(){
-
-    }
-
-    public void mostrar(){
-
-    }
 }

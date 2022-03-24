@@ -3,7 +3,7 @@ public class NavesTripuladas extends Naves {
     public double orbita;
     public int capacidadPersonas;
 
-    public NavesTripuladas(double potencia, double peso, double altura, double velocidad, String nombre){
+    public NavesTripuladas(String potencia, double peso, double altura, double velocidad, String nombre){
         super(potencia, peso, altura, velocidad, nombre);
         this.potencia = potencia;
         this.peso = peso;
@@ -14,14 +14,15 @@ public class NavesTripuladas extends Naves {
         this.capacidadPersonas = 3;
     }
 
-    @Override
+   // @Override
     public void mostrar(){
         System.out.println("Nombre: " + this.nombre);
-        System.out.println("Orbita: " + this.orbita);
-        System.out.println("Altura: " + this.altura);
-        System.out.println("Potencia: " + this.potencia);
-        System.out.println("Peso: " + this.peso);
-        System.out.println("Velocidad: " + this.velocidad);
+        System.out.println("Orbita: " + this.orbita + " km");
+        System.out.println("Altura: " + this.altura + " m");
+        System.out.println("Potencia: " + this.potencia + " hp");
+        System.out.println("Peso: " + this.peso + " t");
+        System.out.println("Velocidad: " + this.velocidad + " km/h");
+        System.out.println("La nave será inpulsada por el vehículo lanzadera con nombre: Saturno V");
     }
 
     @Override
@@ -29,27 +30,30 @@ public class NavesTripuladas extends Naves {
         System.out.println("¡La nave ha llegado a su destino con éxito!");
     }
 
-    @Override
+
     public void misionesLunares(){
         System.out.println("__________________");
-        System.out.println("Esta nave se usa en misiones lunares");
+        System.out.println("La nave indicada para las misiones lunares es: ");
         mostrar();
+        System.out.println("__________________");
         mensajeLlegada();
     }
 
-    @Override
+
     public void experimentacion(){
         System.out.println("__________________");
-        System.out.println("Esta nave se usa en misiones de experimentación");
+        System.out.println("La nave indicada para las misiones de experimentación");
         mostrar();
+        System.out.println("__________________");
         mensajeLlegada();
     }
 
-    @Override
+
     public void mantenimiento(){
         System.out.println("__________________");
-        System.out.println("Esta nave se usa en misiones de mantenimiento");
+        System.out.println("La nave indicada para las misiones de mantenimiento");
         mostrar();
+        System.out.println("__________________");
         mensajeLlegada();
     }
 }

@@ -11,11 +11,15 @@ public class Main {
         switch (numeroPrincipal){
 
             case 1:
-                System.out.println("1. Nave lanzadora. ");
+                System.out.println("Ha seleccionado la nave lanzadera. \n" +
+                        "¿Qué tipo de nave lanzadera quiere obtener?");
+
+                menu.opcionesNavesLanzadera();
                 break;
 
             case 2:
-                System.out.println("2. Nave tripulada. ");
+                System.out.println("Ha seleccionado la nave tripulada. \n" +
+                        "¿Para qué tipo de misión requiere la nave tripulada?");
                 menu.opcionesNavesTripuladas();
                 break;
 
@@ -27,8 +31,5 @@ public class Main {
                 System.out.println("4. Nave no tripulada para estudiar.");
                 break;
         }
-        menu.flujo();
-
-
     }
 }
